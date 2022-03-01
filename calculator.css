@@ -1,0 +1,129 @@
+@font-face{ 
+	font-family: '7led';
+	src: url('fonts/DigitalDisplayTfb-y6oZ.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Digital Dismay';
+    src: url("fonts/Digital Dismay.otf") format("opentype");
+}
+
+@font-face{ 
+	font-family: 'Digital7';
+	src: url('fonts/Digital7-1e1Z.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FrozenCrystal';
+    src: url("fonts/FrozenCrystal-Z34x.otf") format("opentype");
+}
+
+/*@font-face{ RADIOLAND
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}*/
+
+.container {
+	margin-top: 50px;
+	width:  500px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2rem;
+	background-color: rgb(15,33,131);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(15,33,131,.4);
+}
+
+.numbers,
+.operands{
+	  border-top: 10px solid;
+	  border-image-slice: 1;
+	  border-width: 1px;
+	  border-image-source: linear-gradient(to right, rgba(15,33,131,.8), rgba(255,255,255,.4), rgba(15,33,131,.8));
+}
+
+.container,
+.disp,
+.numberButton,
+.opButton,
+.opButtonE {
+	border:  1px solid rgba(255,255,255,.3);
+}
+
+.operands, .numbers {
+	display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+    row-gap:  20px;
+}
+
+.numberButton, .opButton, .opButtonE { 
+	padding: 10px; 
+	border-radius: 5px; 
+	width: 30px; 
+	height: 30px; 
+	line-height: 30px; 
+	background-color: rgba(2,17,96,.9);
+	color: rgba(255,255,255,.6);
+	cursor:  pointer;
+	box-shadow: 0 0 3px rgba(255,255,255,.3);
+	transition-property: all;
+  	transition-duration: .1s;
+  	transition-timing-function: linear;
+  	user-select: none;
+}
+
+.numberButton:hover, .opButton:hover, .opButtonE:hover {
+	/transform: scale(1.02,1.02);/
+	box-shadow: 2px 2px 10px rgba(0,0,0,.6);
+}
+
+.onclick {
+	transform: scale(0.95,.95) !important;
+	box-shadow: 2px 2px 10px rgba(255,255,255,.6) !important;
+}
+
+.display { padding: 10px; font-family: '7led';}
+.numbers { padding: 20px 50px; }
+.numbers .numberButton, .numbers .opButton { flex: 20%; }
+.operands { padding: 30px 50px 20px; font-weight: bolder; }
+.operands .opButton, .operands .opButtonE { flex: 30%; }
+
+.disp { 
+	display:  flex;
+	line-height: 5rem; 
+	padding: 2px 10px; 
+	/*text-align: center; */
+	background-color: rgba(255,255,255,.9);
+	color: rgba(2,17,96,.9); 
+	letter-spacing: 2px;
+	border-radius: 6px; 
+	box-shadow: 0 0 12px rgba(255,255,255,.6);
+}
+
+#res { 
+	box-sizing: border-box; 
+	width: 90%; 
+	text-align: right; 
+	font-size: 4.5rem; 
+	overflow-x: overlay;
+}
+#op {  
+	box-sizing: border-box; 
+	width: 10%; 
+	text-align: center; 
+	font-size: 3rem; 
+}
+
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, rgba(15,33,131,.5), rgba(15,33,131,.9));
+}
