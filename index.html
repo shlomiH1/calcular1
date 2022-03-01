@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="calculator.css" nonce="">
+    <title>Calculator</title>
+</head>
+<html>
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="disp">
+                <div id="sum">0</div>
+            </div>
+            <div class="disp">
+                <div id="res" class="">0</div>
+                <div id="op" class=""></div>
+            </div>
+        </div>
+        <div class="numbers">
+            <div class="opButton" onclick="resetNumber()">C</div>
+            <div class="opButton" onclick="resetCalc()">CE</div>
+            <div class="opButton" onclick="delDigit()">&#8920;</div>
+            <div class="numberButton" onclick="setResult()">1</div>
+            <div class="numberButton" onclick="setResult()">2</div>
+            <div class="numberButton" onclick="setResult()">3</div>
+            <div class="numberButton" onclick="setResult()">4</div>
+            <div class="numberButton" onclick="setResult()">5</div>
+            <div class="numberButton" onclick="setResult()">6</div>
+            <div class="numberButton" onclick="setResult()">7</div>
+            <div class="numberButton" onclick="setResult()">8</div>
+            <div class="numberButton" onclick="setResult()">9</div>
+            <div class="numberButton" onclick="setResult()">.</div>
+            <div class="numberButton" onclick="setResult()">0</div>
+        </div>
+        <div class="operands">
+            <div class="opButton" onclick="setOp()">+</div>
+            <div class="opButton" onclick="setOp()">-</div>
+            <div class="opButton" onclick="setOp()">/</div>
+            <div class="opButton" onclick="setOp()">*</div>
+            <div class="opButtonE" onclick="setTotal()">=</div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
